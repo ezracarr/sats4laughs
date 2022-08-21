@@ -2,6 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <script type="application/javascript" defer="defer">
+      (function () {
+        window.MashSettings = {
+          id: "4e73164c-3d25-43a8-85bb-e1555ca8d4d6",
+        };
+        
+        var loader = function () {
+          window.Mash.init(window.MashSettings);
+        };
+        
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.async = true;
+        script.onload = loader;
+        script.src = "https://wallet.getmash.com/sdk/sdk.js";
+        
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(script);
+      })();
+    </script>
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
