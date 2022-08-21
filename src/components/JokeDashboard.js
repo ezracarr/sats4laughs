@@ -14,15 +14,13 @@ const JokeDashbaord = () => {
     return <div>{error}</div>
   }
   return (
-        <div className="cards">
+        <div >
           {jokes.length > 0 && (
-            <ul>
+            <div className="cards">
               {jokes.map((joke, index) => (
-                <li key={index}>
-                    <Joke jokeData={joke}/>
-                </li>
+                    <Joke key={index} jokeData={joke}/>
               ))}
-            </ul>
+            </div>
           )}
         </div>
       )
