@@ -11,14 +11,13 @@ function App() {
   });
   return (
     <div className="App">
-      <h1>Sats-4-Laughs</h1>
+      <em><h1>Sats-4-Laughs</h1></em>
       <h2>
         <Typewriter
             options={{
               strings: ['Click on a joke to pay for the punchline'],
               autoStart: true,
               loop: false,
-              deleteAll: 1,
               cursor: '',
               deleteSpeed: 33,
               delay: 33,
