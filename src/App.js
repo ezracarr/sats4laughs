@@ -4,11 +4,6 @@ import JokeDashbaord from './components/JokeDashboard';
 import Typewriter from 'typewriter-effect';
 
 function App() {
-  const typeWriter = new Typewriter('#typewriter', {
-    strings: ['Click on a joke to pay for the punchline'],
-    autoStart: true,
-    loop: false,
-  });
   return (
     <div className="App">
       <em><h1>Sats-4-Laughs</h1></em>

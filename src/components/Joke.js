@@ -5,22 +5,22 @@ import CardFlip from 'react-card-flip'
 const Joke = (props) => {
     const [paid, setPaid] = useState(false)
     const [isFlipped, setIsFlipped] = useState(false);
-    const flipBack = (e) => {
-        setIsFlipped(true);
-        props.confetti(true)
-      };
-      const flipFront = (e) => {
-        setIsFlipped(false);
-        props.confetti(false)
-      };
+    const flipBack = () => {
+      setIsFlipped(true);
+      props.confetti(true)
+    };
+    const flipFront = () => {
+      setIsFlipped(false);
+      props.confetti(false)
+    };
     const payForJoke = () => {
-        window.Mash.hasAccess("c9acc1c1-8d0e-45e1-9628-202b5ef1f893").then(granted => {
-            if (granted) {
-              setPaid(true)
-              flipBack()
-              return
-            }
-          })
+      window.Mash.hasAccess("c9acc1c1-8d0e-45e1-9628-202b5ef1f893").then(granted => {
+        if (granted) {
+          setPaid(true)
+          flipBack()
+          return
+        }
+      })
     }
 
 

@@ -35,17 +35,17 @@ const JokeDashbaord = () => {
     return <div className="joke-container">{error}</div>
   }
   return (
-        <div className="joke-container" >
-          {jokes.length > 0 && (
-            <div className="cards">
-              {jokes.map((joke, index) => (
-                    <Joke key={index} jokeData={joke} confetti={confetti}/>
-              ))}
-            </div>
-          )}
-          <Confetti className="confetti-explosion" active={ isExploding } config={ confettiConfig }/>
+    <div className="joke-container" >
+        {jokes.length > 0 && (
+        <div className="cards">
+            {jokes.map((joke, index) => (
+                <Joke key={index} jokeData={joke} confetti={confetti}/>
+            ))}
         </div>
-      )
+        )}
+        <Confetti className="confetti-explosion" active={ isExploding } config={ confettiConfig }/>
+    </div>
+    )
 }
 
 export default JokeDashbaord
