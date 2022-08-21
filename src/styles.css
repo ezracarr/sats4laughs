@@ -1,6 +1,28 @@
+h1 {
+  color: white;
+  margin: auto;
+}
+
+h2 {
+  color: white;
+}
+
 .App {
     font-family: sans-serif;
     text-align: center;
+    background-color: #16181d;
+    background-image: linear-gradient(205deg, #aacaf5 0%, #6372f7 76%);
+  }
+  .joke-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+
+  }
+  .confetti-explosion {
+    margin-left: 100%
   }
   .cards {
     display: flex;
@@ -19,11 +41,13 @@
     box-shadow: 4px 4px 10px 4px rgba(100, 100, 100, 0.5);
   }
   .react-card-front {
-    background-color: aquamarine;
+    background-color: #16181d;
+    background-image: linear-gradient(205deg, #f19f68 0%, #f5f763 76%);
   }
   
   .react-card-back {
-    background-color: cadetblue;
+    background-color: #16181d;
+    background-image: linear-gradient(205deg, #7be2f0 0%, #63f76f 76%);
   }
   
   .card {
